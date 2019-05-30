@@ -15,24 +15,27 @@ mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true},function(er
         console.log(`数据库连接成功`);      
     }
 });
-mongoose.connection.on('open',(err)=>{
-    if(!err){
-        let my_name = new Users({
-            name:'tiantian'
-        })
-            my_name.save(function(err,doc){
-                if(!err){
-                    doc.showname()
-                }
-            })
-            Users.find({name:'tiantian'},(err,doc)=>{
-                if(!err){
-                    console.log(doc.length);
+
+// 测试连接事件
+require('./test/event');
+// mongoose.connection.on('open',(err)=>{
+//     if(!err){
+//         let my_name = new Users({
+//             name:'tiantian'
+//         })
+//             my_name.save(function(err,doc){
+//                 if(!err){
+//                     doc.showname()
+//                 }
+//             })
+//             Users.find({name:'tiantian'},(err,doc)=>{
+//                 if(!err){
+//                     console.log(doc.length);
                     
-                }
-            })
-    }
-})
+//                 }
+//             })
+//     }
+// })
 
 // 响应客户端请求
 app.use(async (ctx,next)=>{
