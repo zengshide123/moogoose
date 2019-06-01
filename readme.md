@@ -23,14 +23,14 @@
 
 ## 2.doc和collection添加方法
 
-    - doc(schema)
+ - doc(schema)
 ```js
     let doc = new schema({})
         doc.methods.showname = function(){
             console.log(this.name)
         }
 ```
-    - collection(model)
+ - collection(model)
 ```js
     let collection = model('collection name','schema instance')
         collection.static.showname = function(){
@@ -45,10 +45,12 @@
  - C 
 
     在model上使用create的方法,可以给集合中新增docs
+
     通过model构造函数 实例化一个doc 在doc上调用save
  - U
 
     在model上使用update,updateMany,updateOne
+    
     通过model构造函数 实例化一个doc 在doc上调用update
  - R
 
@@ -56,6 +58,7 @@
  - D
  
     在model上使用remove
+
     通过model构造函数 实例化一个doc 在doc上调用remove
 
     
