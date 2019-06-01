@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true},function(er
 });
 
 // 测试连接事件
-require('./test/event');
+// require('./test/event');
 // mongoose.connection.on('open',(err)=>{
 //     if(!err){
 //         let my_name = new Users({
