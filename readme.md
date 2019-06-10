@@ -13,7 +13,7 @@
     1.安装本地数据库mongodb
     2.安装mongodb的可视化工具 compass
     3.使用koa搭建一个简单的应答服务器
-    4.scheme新建数据库表(文档约束模型)
+    4.scheme新建数据库(文档约束模型)
     5.model建立数据库集合
     6.mogoose连接数据库
     7.实例化一个文档对象
