@@ -1809,5 +1809,5 @@ Lockfile:
     resolved "https://registry.npmjs.org/ylru/-/ylru-1.2.1.tgz#f576b63341547989c1de7ba288760923b27fe84f"
 
 Trace: 
-  Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+  Error: getaddrinfo ENOTFOUND registry.npm.taobao.org registry.npm.taobao.org:443
       at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
